@@ -1,0 +1,19 @@
+{
+  "name": "tattoo_concierge",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "author": "Sara Buitrago",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^8.0.4"
+  }
+}
