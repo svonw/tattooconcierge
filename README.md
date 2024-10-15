@@ -45,19 +45,10 @@ To run the current version of the project:
 
     bash
 
-git clone git@github.com:svonw/tattooconcierge.git
+git clone git@github.com/svonw/tattooconcierge.git
 
-Navigate to the frontend and backend directories and install dependencies:
 
-bash
-
-cd frontend
-npm install
-
-cd ../backend
-npm install
-
-Run the application: You can use the start.sh script to start both the frontend and backend:
+Run the application: You can use the start.sh script to start both the frontend and backend and also install all dependencies:
 
 bash
 
@@ -76,4 +67,4 @@ I am currently working on a new and improved version of this application. Versio
 Version 2.0 is under development in a separate branch and will be available soon.
 Contributing
 
-If you want to contribute to this project, feel free to fork the repository, create a feature branch, and submit a pull request.# tattoo_concierge
+If you want to contribute to this project, feel free to fork the repository, create a feature branch, and submit a pull request.
