@@ -45,7 +45,7 @@ To run the current version of the project:
 
     bash
 
-git clone git@github.com/svonw/tattooconcierge.git
+git clone git@github.com:svonw/tattooconcierge.git
 
 
 Run the application: You can use the start.sh script to start both the frontend and backend and also install all dependencies:
