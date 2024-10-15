@@ -45,7 +45,7 @@ To run the current version of the project:
 
     bash
 
-git clone git@github.com:yourusername/tattooconcierge.git
+git clone git@github.com:svonw/tattooconcierge.git
 
 Navigate to the frontend and backend directories and install dependencies:
 
