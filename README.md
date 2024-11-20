@@ -10,7 +10,6 @@ This README describes the current state of the project (Version 1.0) and mention
 
 - **User Authentication:** Basic session-based user login system.
 - **Appointment Scheduling:** Users can book and manage tattoo appointments.
-- **Client Management:** Keeps records of client data for reference.
 
 ## Project Structure
 
@@ -51,7 +50,7 @@ To run the current version of the project:
    git clone git@github.com:svonw/tattooconcierge.git
    ```
 
-2. **Run the Backend:**
+2. **Install the Backend:**
 
    - Navigate to the backend directory and install the dependencies:
 
@@ -60,13 +59,7 @@ To run the current version of the project:
    npm install
    ```
 
-   - Start the backend server:
-
-   ```bash
-   npm start
-   ```
-
-3. **Run the Frontend:**
+3. **Install the Frontend:**
 
    - Open a new terminal, navigate to the frontend directory, and install the dependencies:
 
@@ -75,10 +68,12 @@ To run the current version of the project:
    npm install
    ```
 
-   - Start the frontend development server:
+4. **Run the project:**
+
+   - Open a new terminal and run the provided script:
 
    ```bash
-   npm run dev
+   ./start.sh
    ```
 
 The frontend will be available at [http://localhost:5173/](http://localhost:5173/) and the backend at [http://localhost:4000/](http://localhost:4000/).
