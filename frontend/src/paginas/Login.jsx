@@ -38,12 +38,8 @@ function Login() {
 
   return (
     <>
-      <div className="text-center">
-        <img
-          src="../public/img/tattooNEW.png"
-          alt=""
-          className="object-contain h-86 w-96"
-        />
+      <div className="logo h-70 w-70">
+        <img src="../public/img/tattooNEW.png" alt="" />
       </div>
 
       <div className="mt-5 md:mt-0 bg-gray-50 shadow-md p-5 rounded-lg text-center">
