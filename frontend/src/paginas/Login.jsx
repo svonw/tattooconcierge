@@ -7,7 +7,7 @@ function Login() {
 
   const navegar = useNavigate();
 
-  const handleLogin = async (e) => {
+  const handleLogin = async e => {
     e.preventDefault();
 
     try {
@@ -39,17 +39,17 @@ function Login() {
   return (
     <>
       <div className="text-center">
-        <h1 className="text-amber-900 font-medium font-Cinzel text-3xl">
-          Inicia sesión y administra tus citas:
-        </h1>
         <img
-          src="../public/img/TATTOO_FULL.png"
+          src="../public/img/tattooNEW.png"
           alt=""
-          className="object-contain h-48 w-96"
+          className="object-contain h-86 w-96"
         />
       </div>
 
-      <div className="mt-5 md:mt-0 bg-gray-50 shadow-md p-5 rounded-lg">
+      <div className="mt-5 md:mt-0 bg-gray-50 shadow-md p-5 rounded-lg text-center">
+        <h1 className="text-amber-900 font-medium font-Cinzel text-2xl">
+          Inicia sesión:
+        </h1>
         <form onSubmit={handleLogin}>
           <div className="my-4">
             <label className="text-gray-900 block text-1xl text-center font-Cinzel mt-3">
@@ -60,7 +60,7 @@ function Login() {
               placeholder="Email"
               className="border-gray-300 border-2 w-full p-2 mt-3 bg-white rounded-md font-thin text-sm "
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={e => setEmail(e.target.value)}
             />
           </div>
           <div className="my-4">
@@ -72,7 +72,7 @@ function Login() {
               placeholder="Password"
               className="border-gray-300 border-2 w-full p-2 mt-3 bg-gray-50 rounded-md font-thin text-sm "
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={e => setPassword(e.target.value)}
             />
           </div>
           <div className="flex flex-col items-center">
