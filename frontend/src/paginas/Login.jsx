@@ -37,36 +37,34 @@ function Login() {
   };
 
   return (
-    <>
-      <div className="logo h-70 w-70">
-        <img src="../public/img/tattooNEW.png" alt="" />
+    <div className="container flex flex-col sm:flex-row justify-center items-center mx-auto  p-4 gap-4 sm:gap-10 md:gap-12 lg:gap-20">
+      <div className="logo w-64 sm:w-96 m-8">
+        <img src="../public/img/tattooSOLO2.png" alt="" />
       </div>
 
-      <div className="mt-5 md:mt-0 bg-gray-50 shadow-md p-5 rounded-lg text-center">
-        <h1 className="text-amber-900 font-medium font-Cinzel text-2xl">
-          Inicia sesión:
+      <div className="mt-5 md:mt-0 bg-gray-50 shadow-md p-5 rounded-lg text-center sm:w-96">
+        <h1 className="text-amber-900 font-medium font-Ama text-2xl">
+          TATTOO CONCIERGE
         </h1>
         <form onSubmit={handleLogin}>
-          <div className="my-4">
-            <label className="text-gray-900 block text-1xl text-center font-Cinzel mt-3">
-              EMAIL
-            </label>
+          <div className="my-4 flex items-center">
+            <span className="material-icons text-gray-900">
+              alternate_email
+            </span>
             <input
               type="email"
               placeholder="Email"
-              className="border-gray-300 border-2 w-full p-2 mt-3 bg-white rounded-md font-thin text-sm "
+              className="border-gray-300 border-2 w-full p-2 bg-white rounded-md font-thin text-sm "
               value={email}
               onChange={e => setEmail(e.target.value)}
             />
           </div>
-          <div className="my-4">
-            <label className="text-gray-900 block text-1xl text-center font-Cinzel ">
-              CONTRASEÑA
-            </label>
+          <div className="my-4 flex items-center">
+            <span className="material-icons text-gray-900">lock</span>
             <input
               type="password"
-              placeholder="Password"
-              className="border-gray-300 border-2 w-full p-2 mt-3 bg-gray-50 rounded-md font-thin text-sm "
+              placeholder="Contraseña"
+              className="border-gray-300 border-2 w-full p-2 bg-gray-50 rounded-md font-thin text-sm "
               value={password}
               onChange={e => setPassword(e.target.value)}
             />
@@ -75,12 +73,12 @@ function Login() {
             <input
               type="submit"
               value="INICIAR SESION"
-              className="bg-yellow-600 rounded-md p-2 my-3 font-Cinzel font-medium text-white hover:cursor-pointer hover:bg-yellow-700"
+              className="bg-amber-800 rounded-md p-2 my-3 font-Nuni font-medium text-white hover:cursor-pointer hover:bg-yellow-700"
             />
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 }
 

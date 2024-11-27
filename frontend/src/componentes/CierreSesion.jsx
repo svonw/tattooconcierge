@@ -13,7 +13,7 @@ const CierreSesion = () => {
             'Content-Type': 'application/json',
           },
           credentials: 'include',
-        },
+        }
       );
 
       if (response.ok) {
@@ -31,7 +31,7 @@ const CierreSesion = () => {
   return (
     <button
       onClick={handleLogout}
-      className="uppercase text-yellow-800 text-sm p-1 hover:shadow-inner hover:shadow-yellow-800 rounded-md"
+      className="uppercase text-amber-900 text-sm p-1 hover:shadow-inner hover:shadow-yellow-800 rounded-md"
     >
       Cerrar Sesión
     </button>

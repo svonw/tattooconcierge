@@ -9,15 +9,15 @@ const NuevaCita = () => {
     fecha: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
+    setFormData(prevData => ({
       ...prevData,
       [name]: value,
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
 
     try {
@@ -46,7 +46,7 @@ const NuevaCita = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-md mx-auto p-4 bg-white border rounded-lg shadow-md my-2 font-Bar"
+      className="max-w-md mx-auto p-4 bg-white border rounded-lg shadow-md my-2 font-Nuni"
     >
       <div className="mb-4">
         <label className="block text-zinc-700 text-xl mb-2">
@@ -61,7 +61,7 @@ const NuevaCita = () => {
       </div>
       <div className="mb-4">
         <label className="block text-zinc-700 text-xl mb-2">
-          Nombre:
+          Cliente:
           <input
             type="text"
             name="nombre"
@@ -99,7 +99,7 @@ const NuevaCita = () => {
             type="date"
             name="fecha"
             onChange={handleChange}
-            className="w-full p-1 border rounded-md text-zinc-600"
+            className="w-full p-1 border rounded-md text-zinc-400"
           />
         </label>
       </div>

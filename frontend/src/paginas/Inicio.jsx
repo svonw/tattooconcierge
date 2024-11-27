@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import CitaBtn from '../componentes/CitaNuevaBtn';
+
 const Inicio = () => {
   const [citas, setCitas] = useState([]);
 
@@ -22,7 +24,7 @@ const Inicio = () => {
         const data = await respuesta.json();
 
         const citasOrdenadas = data.sort(
-          (a, b) => new Date(a.fecha) - new Date(b.fecha),
+          (a, b) => new Date(a.fecha) - new Date(b.fecha)
         );
 
         const tresCitasProximas = citasOrdenadas.slice(0, 3);
@@ -38,14 +40,10 @@ const Inicio = () => {
   return (
     <div className="grid ">
       <div className="grid m-auto">
-        <Link to="/inicio/nueva">
-          <button className="bg-yellow-600 hover:shadow-inner hover:shadow-yellow-700 rounded-md  font-bold py-2 px-4  mt-5 font-Cinzel text-zinc-700">
-            nueva cita
-          </button>
-        </Link>
+        <CitaBtn />
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3  font-Bar font-light">
-        {citas.map((cita) => (
+        {citas.map(cita => (
           <div
             key={cita._id}
             className="cita-tarjeta bg-white m-10 p-4 rounded-md shadow-md border border-gray-300 hover:shadow-lg"
